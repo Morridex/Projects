@@ -79,7 +79,6 @@ const enemy = {
 };
 
 const chest = {
-  reward: () => {},
   init: () => {
     ctx.fillStyle = "gold";
     ctx.fillRect(300, 50, 50, 50);
@@ -124,7 +123,6 @@ function checkClick() {
     if (!player.choosing) return;
     else {
       action = "chest";
-      chest.reward();
     }
   }
   if (
